@@ -35,7 +35,7 @@ public class VIP extends Tribune{
                 int place = busySit(spectator[i])+1;
                 for (int j = 0; j < names.length; j++) {
                     tickets[j] = new SittingTicket(getTribuneName(), getPrice(), i+1, place);
-                    spectator[i][place] = names[j];
+                    spectator[i][place-1] = names[j];
                     place++;
                 }
                 return tickets;
